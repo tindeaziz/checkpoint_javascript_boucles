@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercices JavaScript - Boucles</title>
+</head>
+<body>
+  <h1>Exercices : boucles for et while</h1>
+  <p>Cliquez sur un bouton pour lancer un exercice. Les résultats s'affichent dans des alertes et dans la console (F12).</p>
+
+  <button onclick="lancer('exercice1.js')">Exercice 1 - Série de nombres</button>
+  <button onclick="lancer('exercice2.js')">Exercice 2 - Caisse</button>
+  <button onclick="lancer('exercice3.js')">Exercice 3 - Notes d'une classe</button>
+
+  <script>
+    // Charge le fichier de l'exercice choisi
+    function lancer(fichier) {
+      let script = document.createElement("script");
+      script.src = fichier + "?v=" + Date.now();
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
